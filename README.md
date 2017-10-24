@@ -7,3 +7,6 @@ _The catch-all template for building a highly browser-friendly html webpage._
 - [Link to this repository](https://github.com/willinspire/webpage-quickstart)
 
 - [Explore my other projects](http://www.apt-get.co/)
+
+<br><hr>
+<i>built with [Bootstrap](http://getbootstrap.com/)</i>
