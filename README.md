@@ -1,5 +1,5 @@
 # webpage-quickstart
-_The catch-all template for building a highly browser-friendly html webpage._
+The catch-all template for quickstarting a highly browser-friendly html webpage.
 <hr><br>
 
 - [View the live webpage example](https://willinspire.github.io/webpage-quickstart/)
