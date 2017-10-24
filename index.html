@@ -2,31 +2,45 @@
 <html lang="en">
 
 <head>
-    <title>WEBPAGE QUICKSTART</title>
+
+    <!-- ****** Website TITLE (appears in the browser tab) ****** -->
+    <title>QUICKSTART</title>
+
+    <!-- ****** META TAGS ****** -->
+    <!-- Key meta tags for proper site compatibility and SEO -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="description" content="The catch-all template for building a highly browser-friendly html webpage.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0 shrink-to-fit=no">
+    <meta name="description" content="The catch-all template for building a browser-friendly html webpage.">
     <meta name="keywords" content="html, css, website template, html head template, favicon meta, html favicon, quickstart html">
 
-    <!-- Favicon Collection ( Generated automatically at http://www.favicon-generator.org/ ) -->
-    <!-- Place all icons into a subfolder labeled "images" and then add the following meta info to your webpage -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/images/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/images/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/images/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/images/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/images/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-    <link rel="manifest" href="/images/manifest.json">
+    <!-- ****** SITE BASE LOCATION ****** -->
+    <!-- Insert the base URL for the website as the "site base location" -->
+    <!-- <base href="https://www.resonova.com"> -->
+
+    <!-- ****** FONTS ****** -->
+    <!-- Font selections -->
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Roboto|Ubuntu" rel="stylesheet">
+
+    <!-- ****** FAVICONS AND BRANDING ****** -->
+    <!-- This site uses a favicon generator service provided by favicon-generator.org -->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
     <!-- Add to homescreen for Chrome on Android -->
@@ -45,8 +59,22 @@
 
     <link rel="shortcut icon" href="/images/favicon.png">
 
-    <!-- Website element styling information (CSS) -->
-    <style>
+    <!-- ****** CSS STYLE DATA ****** -->
+    <!-- Local customized style sheet reference -->
+    <!-- <link rel="stylesheet" href="/index.css"> -->
+    <!-- Official Bootstrap style sheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+
+    <style type="text/css">
+        @-ms-viewport {
+            width: device-width;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
         header {
             background: white;
         }
@@ -78,34 +106,110 @@
         p {
             font-style: normal;
         }
+        /* BUTTON STYLES */
+
+        .btn {
+            border: none;
+            color: #ffffff;
+            padding: 8px 8px;
+            margin: 10px;
+            max-width: 50%;
+            min-width: 240px;
+            font-size: 14px;
+            cursor: pointer;
+            box-sizing: border-box;
+            box-shadow: 2px 3px 4px #000000;
+        }
+
+        .success {
+            background-color: #4CAF50;
+        }
+        /* Green */
+
+        .success:hover {
+            background-color: #46a049;
+        }
+
+        .info {
+            background-color: #2196F3;
+        }
+        /* Blue */
+
+        .info:hover {
+            background: #0b7dda;
+        }
+
+        .warning {
+            background-color: #ff9800;
+        }
+        /* Orange */
+
+        .warning:hover {
+            background: #e68a00;
+        }
+
+        .danger {
+            background-color: #f44336;
+        }
+        /* Red */
+
+        .danger:hover {
+            background: #da190b;
+        }
+
+        .default {
+            background-color: #e7e7e7;
+            color: "black";
+        }
+        /* Gray */
+
+        .default:hover {
+            background: #ddd;
+        }
     </style>
 
-    <!-- Universal scripts for your website (js) -->
-    <script></script>
+    <!-- ****** WEBSITE SCRIPTS (js) ****** -->
+    <!-- Ajax and jQuery -->
+    <script data-require="jquery@*" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Additional scripts are listed at the end of the "body" tag to increase overall website performance and faster load speeds -->
 </head>
 
-<!-- Webpage HEADER/BODY/FOOTER (the area for your main front-end page content) -->
-<header>
-    <h1>WEBPAGE QUICKSTART</h1>
-    <br>
-    <hr>
-</header>
-
 <body>
-    <h2>Here is where greatness begins</h2>
-    <h2>Let the awesomeness flow!</h2>
-    <br>
-    <p>Feel free to copy any part of this page for any project you are working on. Change anything you feel like changing and don't worry about any attribution. Just focus on building great stuff!</p>
-    
-    <p>Click the button below to view the source code for this basic (but very well-rounded) webpage!</p> 
-    <br>
-    
-</body>
 
-<footer>
-    <button type="button" onClick="location.href='https://github.com/willinspire/webpage-quickstart'">
-        <i>think outside the box</i>
-    </button>
-</footer>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-3">Quickstart</h1>
+            <p class="lead">Use the source code of this web page to jump start your new project</p>
+        </div>
+    </div>
+    <div class="clearfix">
+        <div class="column menu">
+            <input class="btn info" type="button" onclick="location.href='https://github.com/resonova/webpage-quickstart';" value="HOME">
+            <ul>
+                <li>Option 1</li>
+                <li>Option 2</li>
+                <li>Option 3</li>
+                <li>Option 4</li>
+            </ul>
+        </div>
+        <div class="column content">
+            <h2>Some Flexible Content</h2>
+            <p>This is an epic paragraph on an epic auto-resizing "responsive" website template layout. Check out how well this
+                thing resizes by viewing this page with alternate resolutions.</p>
+            <p>Expect great things. Do great things.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="p2">($) ¯\_(ツ)_/¯ (฿)</p>
+    </div>
+
+    <!-- SCRIPTS: jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+</body>
 
 </html>
